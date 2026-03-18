@@ -1,0 +1,128 @@
+/* =============================== */
+/*   ESTILO HYPHEN – RELATÓRIO WCAG */
+/* =============================== */
+
+:root {
+    --bg: #F4EFE7;              /* Bege Hyphen */
+    --text: #1A1A1A;            /* Preto suave */
+    --text-light: #4A4A4A;      /* Cinza escuro */
+    --border: #C8C1B6;          /* Bege acinzentado */
+    --accent: #D64545;          /* Vermelho Hyphen */
+    --accent-hover: #B83A3A;
+    --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+/* GLOBAL */
+.hidden {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* HERO */
+.hero {
+    text-align: left;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: var(--text-light);
+}
+
+/* SECTION TITLES */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* INFO LIST */
+#info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#info li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead th {
+    background: rgba(0,0,0,0.05);
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+}
+
+table tbody td {
+    padding: 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* CRITERIA TABLE */
+.criteria-table td:first-child {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.criteria-table td a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.criteria-table td a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+}
